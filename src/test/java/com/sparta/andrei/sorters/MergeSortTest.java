@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class BubbleSortTest {
-    public static Sorter sorter = new BubbleSort();
+public class MergeSortTest {
+    public static Sorter sorter = new MergeSort();
 
     @Test
     @DisplayName("Test sort with only positive numbers")
