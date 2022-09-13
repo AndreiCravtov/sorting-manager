@@ -1,34 +1,32 @@
 package com.sparta.andrei.structures;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
-public class SortedBinaryTree {
-    private Node root;
+public class BinarySearchTree {
+    private BinarySearchTreeNode root;
 
     public void add(int value) {
         if (root == null) {
-            root = new Node(value);
+            root = new BinarySearchTreeNode(value);
             return;
         }
-
-        Node currentNode = root;
+        BinarySearchTreeNode currentNode = root;
         while (true) {
-            Node parentNode = currentNode;
+            BinarySearchTreeNode parentNode = currentNode;
             if (value == currentNode.value) {
                 currentNode.count++;
                 break;
             } else if (value > currentNode.value) {
                 currentNode = currentNode.right;
                 if (currentNode == null) {
-                    currentNode = new Node(value);
+                    currentNode = new BinarySearchTreeNode(value);
                     parentNode.right = currentNode;
                     break;
                 }
             } else {
                 currentNode = currentNode.left;
-                if (currentNode==null) {
-                    currentNode = new Node(value);
+                if (currentNode == null) {
+                    currentNode = new BinarySearchTreeNode(value);
                     parentNode.left = currentNode;
                     break;
                 }
@@ -37,36 +35,26 @@ public class SortedBinaryTree {
     }
 
     public int[] inOrderTraversal() {
-        if (root == null) return new int[]{};
-
         ArrayList<Integer> traversal = new ArrayList<>();
-
-        Stack<Node> stack = new Stack<>();
-        Node currentNode = root;
-
-        while (currentNode != null || !stack.isEmpty()) {
-            while (currentNode != null) {
-                stack.push(currentNode);
-                currentNode = currentNode.left;
-            }
-            currentNode = stack.pop();
-
-            for (int i=0; i<currentNode.count; i++)
-                traversal.add(currentNode.value);
-
-            currentNode = currentNode.right;
-        }
-
+        inOrderTraversal(traversal, root);
         return traversal.stream().mapToInt(i -> i).toArray();
+    }
+
+    private void inOrderTraversal(ArrayList<Integer> traversal, BinarySearchTreeNode node) {
+        if (node == null) return;
+        inOrderTraversal(traversal, node.left);
+        for (int i = 0; i < node.count; i++)
+            traversal.add(node.value);
+        inOrderTraversal(traversal, node.right);
     }
 }
 
-class Node {
+class BinarySearchTreeNode {
     int value;
     int count;
-    Node left, right;
+    BinarySearchTreeNode left, right;
 
-    public Node(int _value) {
+    BinarySearchTreeNode(int _value) {
         value = _value;
         count = 1;
         left = right = null;

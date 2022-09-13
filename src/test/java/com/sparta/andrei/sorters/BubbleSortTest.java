@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class BubbleSortTest {
     public static Sorter sorter = new BubbleSort();
 
@@ -60,6 +63,26 @@ public class BubbleSortTest {
         Assertions.assertArrayEquals(
                 array,
                 new int[] {0, 5, -6, -5, -4, 5, 7, 8, 2, 4, 1}
+        );
+    }
+
+    @Test
+    @DisplayName("Test the performance of the sort with 65536 elements")
+    void testLargeArray() throws IOException {
+        int [] unsorted = new int [65536], sorted = new int [65536];
+
+        InputStream fileUnsorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_unsorted");
+        InputStream fileSorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_sorted");
+        for (int i=0; i<65536; i++){
+            unsorted[i] = fileUnsorted.read();
+            sorted[i] = fileSorted.read();
+        }
+        fileUnsorted.close();
+        fileSorted.close();
+
+        Assertions.assertArrayEquals(
+                sorter.sortArray(unsorted),
+                sorted
         );
     }
 }
