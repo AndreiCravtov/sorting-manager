@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6f8638d-ed41-41a7-a84a-f06dfa2dd212" name="Changes" comment="push code">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test_list_sorted" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test_list_unsorted" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/TreeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/TreeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/structures/SortedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/structures/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/BubbleSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/MergeSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/TreeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/andrei/sorters/TreeSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/andrei/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sparta/andrei/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/andrei/sorters/BubbleSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sparta/andrei/sorters/BubbleSortTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/andrei/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/andrei/sorters/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sparta/andrei/sorters/Sorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sparta/andrei/sorters/BubbleSortTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662980731968</updated>
-      <workItem from="1663060490613" duration="22824000" />
+      <workItem from="1663060490613" duration="23125000" />
     </task>
     <task id="LOCAL-00001" summary="push code">
       <created>1662980854884</created>
@@ -157,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662997211584</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="push code">
+      <created>1663085729088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663085729088</updated>
+    </task>
+    <task id="LOCAL-00007" summary="push code">
+      <created>1663086006198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663086006198</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
