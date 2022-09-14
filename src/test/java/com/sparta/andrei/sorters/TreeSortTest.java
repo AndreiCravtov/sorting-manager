@@ -67,13 +67,13 @@ public class TreeSortTest {
     }
 
     @Test
-    @DisplayName("Test the performance of the sort with 65536 elements")
+    @DisplayName("Test the performance of the sort with 2^23=8388608 elements")
     void testLargeArray() throws IOException {
-        int [] unsorted = new int [65536], sorted = new int [65536];
+        int [] unsorted = new int [8388608], sorted = new int [8388608];
 
-        InputStream fileUnsorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_unsorted");
-        InputStream fileSorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_sorted");
-        for (int i=0; i<65536; i++){
+        InputStream fileUnsorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("linearithmic_test_array_unsorted");
+        InputStream fileSorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("linearithmic_test_array_sorted");
+        for (int i=0; i<8388608; i++){
             unsorted[i] = fileUnsorted.read();
             sorted[i] = fileSorted.read();
         }

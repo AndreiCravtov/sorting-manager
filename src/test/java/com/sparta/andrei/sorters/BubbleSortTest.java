@@ -67,13 +67,13 @@ public class BubbleSortTest {
     }
 
     @Test
-    @DisplayName("Test the performance of the sort with 65536 elements")
+    @DisplayName("Test the performance of the sort with 2^15=32768 elements")
     void testLargeArray() throws IOException {
-        int [] unsorted = new int [65536], sorted = new int [65536];
+        int [] unsorted = new int [32768], sorted = new int [32768];
 
-        InputStream fileUnsorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_unsorted");
-        InputStream fileSorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("test_list_sorted");
-        for (int i=0; i<65536; i++){
+        InputStream fileUnsorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("polynomial_test_array_unsorted");
+        InputStream fileSorted = Thread.currentThread().getContextClassLoader().getResourceAsStream("polynomial_test_array_sorted");
+        for (int i=0; i<32768; i++){
             unsorted[i] = fileUnsorted.read();
             sorted[i] = fileSorted.read();
         }
