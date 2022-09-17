@@ -3,6 +3,7 @@ package com.sparta.andrei.sorters;
 import java.util.Arrays;
 
 public class MergeSort implements Sorter {
+    MergeSort(){}
     @Override
     public int[] sortArray(int[] arrayToSort) {
         int[] returnVal = Arrays.copyOf(arrayToSort, arrayToSort.length);

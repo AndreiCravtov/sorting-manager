@@ -3,6 +3,7 @@ package com.sparta.andrei.sorters;
 import java.util.Arrays;
 
 public class BubbleSort implements Sorter {
+    BubbleSort(){}
     @Override
     public int[] sortArray(int[] arrayToSort) {
         int[] returnArr = Arrays.copyOf(arrayToSort, arrayToSort.length);
