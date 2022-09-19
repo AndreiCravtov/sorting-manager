@@ -16,6 +16,13 @@ public class SortModel {
         sorted = new int[0];
     }
 
+    public SortModel(SorterFactory.SorterType type) {
+        sorterFactory = new SorterFactory();
+        unsorted = new int[0];
+        sorted = new int[0];
+        sorter = sorterFactory.getNewSorter(type);
+    }
+
     public int[] getSorted() {
         return sorted;
     }

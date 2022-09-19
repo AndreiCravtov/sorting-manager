@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6f8638d-ed41-41a7-a84a-f06dfa2dd212" name="Changes" comment="push code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/InvalidRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/LengthIsNegative.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/SorterIsNull.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/RandomModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/RandomModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/SortModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/SortModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/SorterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/SorterFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,7 @@
       <workItem from="1663229004158" duration="17523000" />
       <workItem from="1663316863292" duration="2707000" />
       <workItem from="1663425721251" duration="4592000" />
-      <workItem from="1663601607466" duration="613000" />
+      <workItem from="1663601607466" duration="7246000" />
     </task>
     <task id="LOCAL-00001" summary="push code">
       <created>1662980854884</created>
@@ -203,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663447527486</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="push code">
+      <created>1663609964708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663609964708</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

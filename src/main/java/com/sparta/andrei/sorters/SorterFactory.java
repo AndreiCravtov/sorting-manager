@@ -6,7 +6,7 @@ public class SorterFactory {
         MERGE_SORT("Merge Sort"),
         TREE_SORT("Tree Sort");
 
-        private String name;
+        private final String name;
 
         SorterType(String name) {
             this.name = name;
