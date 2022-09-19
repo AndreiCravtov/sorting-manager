@@ -1,5 +1,6 @@
 package com.sparta.andrei.main.model;
 
+import com.sparta.andrei.errors.SorterIsNull;
 import com.sparta.andrei.sorters.Sorter;
 import com.sparta.andrei.sorters.SorterFactory;
 
@@ -31,8 +32,8 @@ public class SortModel {
         sorter = sorterFactory.getNewSorter(type);
     }
 
-    public long sort() {
-        assert sorter != null;
+    public long sort() throws SorterIsNull {
+        if (sorter == null) throw new SorterIsNull();
 
         long startTime = System.nanoTime();
         sorted = sorter.sortArray(unsorted);

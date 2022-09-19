@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6f8638d-ed41-41a7-a84a-f06dfa2dd212" name="Changes" comment="push code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/logging/Logging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/RandomModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/SortModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/view/DisplayManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/SorterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/InvalidRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/LengthIsNegative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/errors/SorterIsNull.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/TreeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/sorters/TreeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/controller/SortManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/RandomModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/RandomModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/SortModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/andrei/main/model/SortModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +130,8 @@
       <workItem from="1663157203600" duration="3676000" />
       <workItem from="1663229004158" duration="17523000" />
       <workItem from="1663316863292" duration="2707000" />
-      <workItem from="1663425721251" duration="3133000" />
+      <workItem from="1663425721251" duration="4592000" />
+      <workItem from="1663601607466" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="push code">
       <created>1662980854884</created>
@@ -202,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663157687668</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="push code">
+      <created>1663447527486</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663447527486</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

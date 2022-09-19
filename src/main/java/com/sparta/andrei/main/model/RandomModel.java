@@ -1,5 +1,8 @@
 package com.sparta.andrei.main.model;
 
+import com.sparta.andrei.errors.InvalidRange;
+import com.sparta.andrei.errors.LengthIsNegative;
+
 import java.util.Random;
 
 public class RandomModel {
@@ -11,9 +14,9 @@ public class RandomModel {
         random = new Random();
     }
 
-    public void setArray(int length, int lower, int upper) {
-        assert length >= 0;
-        assert lower <= upper;
+    public void setArray(int length, int lower, int upper) throws LengthIsNegative, InvalidRange {
+        if (length < 0) throw new LengthIsNegative();
+        if (lower > upper) throw new InvalidRange();
 
         array = new int[length];
         for (int i=0; i<length; i++)
